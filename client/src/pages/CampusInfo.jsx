@@ -20,7 +20,7 @@ export const CampusInfo = () => {
 
     const deleteCampusInfo = async(id) => {
         try {
-                const response = await fetch('https://campus-info-server.onrender.com', {
+                const response = await fetch(`https://campus-info-server.onrender.com/api/admin/campusInfo/delete/${id}`, {
                     method: "DELETE",
                     headers:{
                         Authorization: authorizationToken
