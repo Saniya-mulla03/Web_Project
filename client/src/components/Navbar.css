@@ -1,0 +1,11 @@
+.container{
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+}
+
+ul{
+    display: flex;
+    gap: 32px;
+}
