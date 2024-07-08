@@ -47,7 +47,7 @@ export const AuthProvided = ({children}) => {
     const userAuthentication = useCallback(async () => {
         try {
             setIsLoading(true);
-            const response = await fetch("https://campus-info-server.onrender.com", {
+            const response = await fetch("https://campus-info-server.onrender.com/api/auth/user", {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken,
@@ -85,7 +85,7 @@ export const AuthProvided = ({children}) => {
 
     const getCampusInfo = useCallback(async () => {
         try {
-            const response = await fetch("https://campus-info-server.onrender.com", {
+            const response = await fetch("https://campus-info-server.onrender.com/api/data/campusInfo", {
                 method: "GET",
             });
             if (response.ok) {
