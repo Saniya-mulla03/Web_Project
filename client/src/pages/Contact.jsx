@@ -40,7 +40,7 @@ export const Contact = () => {
         e.preventDefault();
         
         try {
-            const response = await fetch("https://campus-info-server.onrender.com", {
+            const response = await fetch("https://campus-info-server.onrender.com/api/form/contact", {
                 method: "POST",
                 headers: {
                     'Content-Type':"application/json"
