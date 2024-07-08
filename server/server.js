@@ -12,7 +12,7 @@ const CampusInfo = require("./models/campusInfo-model");
 
 // let's tackle cors
 const corsOptions = {
-    origin: "https://campus-info-client.onrender.com/about",
+    origin: "https://campus-info-client.onrender.com",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     Credentials: true,
 };
