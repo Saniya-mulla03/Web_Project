@@ -24,7 +24,7 @@ export const CampusInfoUpdate = () => {
         e.preventDefault();
         //console.log(user);
     try{
-        const response = await fetch("https://campus-info-server.onrender.com", {
+        const response = await fetch("https://campus-info-server.onrender.com/admin/campusInfo/add", {
             method: "POST",
             headers: {
                 'Content-Type': "application/json",
