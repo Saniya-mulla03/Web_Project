@@ -7,7 +7,7 @@ export const Home = () => {
     const[users, setUsers] = useState([]);
     const getAllUsersData = useCallback(async() => {
         try {
-                const response = await fetch("https://campus-info-server.onrender.com", {
+                const response = await fetch("https://campus-info-server.onrender.com/api/admin/users", {
                     method: "GET",
                     headers:{
                         Authorization: authorizationToken
