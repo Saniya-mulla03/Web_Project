@@ -8,7 +8,7 @@ export const AdminContacts = () => {
 
     const getContactsData = useCallback(async() => {
         try {
-            const response = await fetch("http://localhost:5000/api/admin/contacts", {
+            const response = await fetch("https://campus-info-server.onrender.com", {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken,
@@ -26,7 +26,7 @@ export const AdminContacts = () => {
 
     const deleteContactById = async(id) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/contacts/delete/${id}`, {
+            const response = await fetch('https://campus-info-server.onrender.com', {
                 method: 'DELETE',
                 headers: {
                     Authorization: authorizationToken,
