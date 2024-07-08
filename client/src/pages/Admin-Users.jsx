@@ -7,7 +7,7 @@ export const AdminUsers = () => {
     const[users, setUsers] = useState([]);
     const getAllUsersData = useCallback(async() => {
         try {
-                const response = await fetch("https://campus-info-server.onrender.com", {
+                const response = await fetch("https://campus-info-server.onrender.com/api/admin/users", {
                     method: "GET",
                     headers:{
                         Authorization: authorizationToken
@@ -32,7 +32,7 @@ export const AdminUsers = () => {
     // delete the user on delete button
     const deleteUser = async(id) => {
         try {
-                const response = await fetch('https://campus-info-server.onrender.com', {
+                const response = await fetch(`https://campus-info-server.onrender.com/api/admin/users/delete/${id}`, {
                     method: "DELETE",
                     headers:{
                         Authorization: authorizationToken
