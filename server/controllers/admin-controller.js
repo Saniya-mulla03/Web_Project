@@ -25,6 +25,16 @@ const getUserById = async(req, res) => {
     }
 }
 
+const getCampusInfoById = async(req, res) => {
+    try {
+        const id = req.params.id;
+        const data = await CampusInfo.findOne({_id:id} , {password: 0});
+        return res.status(200).json(data);
+    } catch (error) {
+        next(error);
+    }
+}
+
 const deleteUserById = async(req, res) => {
     try {
         const id = req.params.id;
@@ -40,6 +50,19 @@ const updateUserById = async(req, res) => {
         const id = req.params.id;
         const updateUserData = req.body;
         const updatedData = await User.updateOne({_id: id}, {
+            $set: updateUserData,
+        });
+        return res.status(200).json(updatedData);
+    } catch (error) {
+        next(error);
+    }
+}
+
+const updateCampusInfoById = async(req, res) => {
+    try {
+        const id = req.params.id;
+        const updateUserData = req.body;
+        const updatedData = await CampusInfo.updateOne({_id: id}, {
             $set: updateUserData,
         });
         return res.status(200).json(updatedData);
@@ -81,4 +104,4 @@ const deleteCampusInfoById = async(req,res) => {
     }
 }
 
-module.exports = {getAllUsers, getAllContacts, deleteUserById, getUserById, updateUserById, deleteContactById, deleteCampusInfoById};
+module.exports = {getAllUsers, getAllContacts, deleteUserById, getUserById, updateUserById, deleteContactById, deleteCampusInfoById, updateCampusInfoById, getCampusInfoById};
