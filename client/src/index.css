@@ -369,3 +369,94 @@ p {
 .add-campusInfo{
   margin-left: 1300px;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .grid-four-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .grid-three-cols, .grid-four-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .add-campusInfo {
+    margin-left: auto;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  p, li, label, input, textarea, a {
+    font-size: 1.6rem;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+  .contact-img img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-two-cols, .grid-three-cols, .grid-four-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    flex-direction: column;
+  }
+
+  .secondary-btn {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+  
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+  
+  .contact-img {
+    flex-direction: column;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 50%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p, li, label, input, textarea, a {
+    font-size: 1.4rem;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .header {
+    font-size: 150px;
+  }
+  
+  .section-analytics {
+    margin: 48px 0;
+  }
+}
