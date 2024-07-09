@@ -89,8 +89,11 @@ export const CampusInfo = () => {
                                 <p className="mt-3 card-text"><b>Details:</b> {details}</p>
                                 </div>
                                 {isAdminLoggedIn &&
-                                                <button onClick={() => deleteCampusInfo(curElem._id)} style={{ marginLeft: '10px', marginBottom: '10px' }}>Delete</button>
-                                            }
+                                            <ul>
+                                                <li><button onClick={() => deleteCampusInfo(curElem._id)} style={{ marginLeft: '90px', marginBottom: '10px' }}>Delete</button></li>
+                                                <li><NavLink to={`/admin/campusInfo/${curElem._id}/edit`} style={{marginBottom: '10px'}}>Edit</NavLink></li>
+                                            </ul>
+                                        }
                             </div>
                             </div>
                         );
