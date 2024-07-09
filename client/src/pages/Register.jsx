@@ -78,8 +78,7 @@ export const Register = () => {
                                     <label htmlFor="prn" className="labels">PRN</label>
                                     <input className="registration-form-input"
                                         type="text" 
-                                        name="prn"  
-{/*                                         placeholder="prn"  */}
+                                        name="prn"
                                         id="prn" 
                                         required 
                                         autoComplete="off"
@@ -91,8 +90,7 @@ export const Register = () => {
                                     <label htmlFor="studentname" className="labels">student Name</label>
                                     <input className="registration-form-input"
                                         type="text" 
-                                        name="studentName"  
-{/*                                         placeholder="studentName"  */}
+                                        name="studentName" 
                                         id="studentName" 
                                         required 
                                         autoComplete="off"
@@ -104,8 +102,7 @@ export const Register = () => {
                                     <label htmlFor="email" className="labels">email</label>
                                     <input className="registration-form-input"
                                         type="email" 
-                                        name="email"  
-{/*                                         placeholder="enter your email"  */}
+                                        name="email" 
                                         id="email" 
                                         required 
                                         autoComplete="off"
@@ -117,8 +114,7 @@ export const Register = () => {
                                     <label htmlFor="phone" className="labels">phone</label>
                                     <input className="registration-form-input"
                                         type="text" 
-                                        name="phone"  
-{/*                                         placeholder="enter your phone"  */}
+                                        name="phone" 
                                         id="phone" 
                                         required 
                                         autoComplete="off"
@@ -130,8 +126,7 @@ export const Register = () => {
                                     <label htmlFor="password" className="labels">password</label>
                                     <input className="registration-form-input"
                                         type="password" 
-                                        name="password"  
-{/*                                         placeholder="enter your password"  */}
+                                        name="password" 
                                         id="password" 
                                         required 
                                         autoComplete="off"
