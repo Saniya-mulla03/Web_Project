@@ -71,8 +71,7 @@ export const Login = () => {
                                     <label htmlFor="email" className="labels">email</label>
                                     <input 
                                         type="email" 
-                                        name="email"  
-{/*                                         placeholder="enter your email"  */}
+                                        name="email" 
                                         id="email" 
                                         required 
                                         autoComplete="off"
@@ -84,8 +83,7 @@ export const Login = () => {
                                     <label htmlFor="password" className="labels">password</label>
                                     <input 
                                         type="password" 
-                                        name="password"  
-{/*                                         placeholder="enter your password"  */}
+                                        name="password" 
                                         id="password" 
                                         required 
                                         autoComplete="off"
