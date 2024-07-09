@@ -14,6 +14,7 @@ import { AdminUsers } from "./pages/Admin-Users";
 import { AdminContacts } from "./pages/Admin-Contacts";
 import { AdminUpdate } from "./pages/Admin-update";
 import { CampusInfoUpdate } from "./pages/CampusInfo-update";
+import { CampusInfoEdit } from "./pages/CampusInfo-Edit";
 const App = () => {
 
   return <>
@@ -34,6 +35,7 @@ const App = () => {
         </Route>
         <Route path="/admin/users/:id/edit" element={<AdminUpdate/>}/>
         <Route path="/admin/campusInfo/add" element={<CampusInfoUpdate/>}/>
+        <Route path="/admin/campusInfo/:id/edit" element={<CampusInfoEdit/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
