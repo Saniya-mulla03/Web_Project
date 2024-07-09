@@ -79,7 +79,7 @@ export const Register = () => {
                                     <input className="registration-form-input"
                                         type="text" 
                                         name="prn"  
-                                        placeholder="prn" 
+{/*                                         placeholder="prn"  */}
                                         id="prn" 
                                         required 
                                         autoComplete="off"
@@ -92,7 +92,7 @@ export const Register = () => {
                                     <input className="registration-form-input"
                                         type="text" 
                                         name="studentName"  
-                                        placeholder="studentName" 
+{/*                                         placeholder="studentName"  */}
                                         id="studentName" 
                                         required 
                                         autoComplete="off"
@@ -105,7 +105,7 @@ export const Register = () => {
                                     <input className="registration-form-input"
                                         type="email" 
                                         name="email"  
-                                        placeholder="enter your email" 
+{/*                                         placeholder="enter your email"  */}
                                         id="email" 
                                         required 
                                         autoComplete="off"
@@ -118,7 +118,7 @@ export const Register = () => {
                                     <input className="registration-form-input"
                                         type="text" 
                                         name="phone"  
-                                        placeholder="enter your phone" 
+{/*                                         placeholder="enter your phone"  */}
                                         id="phone" 
                                         required 
                                         autoComplete="off"
@@ -131,7 +131,7 @@ export const Register = () => {
                                     <input className="registration-form-input"
                                         type="password" 
                                         name="password"  
-                                        placeholder="enter your password" 
+{/*                                         placeholder="enter your password"  */}
                                         id="password" 
                                         required 
                                         autoComplete="off"
