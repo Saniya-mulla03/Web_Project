@@ -11,5 +11,7 @@ router.route("/users/delete/:id").delete(authMiddleware, adminMiddleware, delete
 router.route('/contacts').get(authMiddleware, adminMiddleware, getAllContacts);
 router.route('/contacts/delete/:id').delete(authMiddleware, adminMiddleware,deleteContactById);
 router.route('/campusInfo/delete/:id').delete(authMiddleware, adminMiddleware, deleteCampusInfoById);
+router.route('/campusInfo/:id').get(authMiddleware, adminMiddleware, getCampusInfoById);
+router.route('/campusInfo/:id/edit').patch(authMiddleware, adminMiddleware, updateCampusInfoById);
 
 module.exports = router;
