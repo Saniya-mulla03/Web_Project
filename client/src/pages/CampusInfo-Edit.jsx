@@ -17,7 +17,7 @@ export const CampusInfoEdit = () => {
 
     const getCampusInfoData = useCallback(async() => {
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/campusInfo/${params.id}`, {
+            const response = await fetch(`https://campus-info-server.onrender.com/api/admin/campusInfo/${params.id}`, {
                 method: "GET",
                 headers:{
                     Authorization: authorizationToken
@@ -52,7 +52,7 @@ export const CampusInfoEdit = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/campusInfo/${params.id}/edit`, {
+            const response = await fetch(`https://campus-info-server.onrender.com/api/admin/campusInfo/${params.id}/edit`, {
                     method: "PATCH",
                     headers:{
                         "Content-Type": "application/json",     
