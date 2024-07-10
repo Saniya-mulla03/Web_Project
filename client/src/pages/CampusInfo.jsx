@@ -90,8 +90,8 @@ export const CampusInfo = () => {
                                 </div>
                                 {isAdminLoggedIn &&
                                             <ul>
-                                                <li><button onClick={() => deleteCampusInfo(curElem._id)} style={{ marginLeft: '90px', marginBottom: '10px' }}>Delete</button></li>
-                                                <li><NavLink to={`/admin/campusInfo/${curElem._id}/edit`} style={{marginBottom: '10px'}}>Edit</NavLink></li>
+                                                <li><button onClick={() => deleteCampusInfo(curElem._id)} style={{ marginLeft: '20px', marginBottom: '10px' }}>Delete</button></li>
+                                                <li><NavLink to={`/admin/campusInfo/${curElem._id}/edit`} style={{ marginLeft: '170px',marginBottom: '10px'}}>Edit</NavLink></li>
                                             </ul>
                                         }
                             </div>
