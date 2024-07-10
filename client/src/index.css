@@ -348,6 +348,7 @@ table th, table td {
   margin-bottom: 30px;
   background-color: #fff;
   border-radius: 15px;
+  color: black;
 }
 .card-body {
   flex: 1 1 auto;
