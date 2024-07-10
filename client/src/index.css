@@ -346,7 +346,7 @@ table th, table td {
 .card {
   box-shadow: 0 .5rem 10px rgba(0, 0, 0, .05);
   margin-bottom: 30px;
-  background-color: rgb(109, 7, 205);
+  background-color: #fff;
   border-radius: 15px;
 }
 .card-body {
