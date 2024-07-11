@@ -98,6 +98,7 @@ button{
   cursor: pointer;
   letter-spacing: 1px;
   transition: border-color 0.3s;
+  color: white;
 }
 
 button:hover{
